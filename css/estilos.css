@@ -1,0 +1,302 @@
+*{
+    box-sizing: border-box;
+}
+body {
+   
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+    *background-color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    *border: 1px solid red;
+    background-color: black;
+    border: 2px solid violet;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    flex: 2;
+    margin: auto;
+    font-size: 75px;
+}
+
+nav{
+    flex-basis: 19%;
+    text-align: center;
+}
+nav ol{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: inherit;
+}
+
+nav ol li a{
+    background-color: black;
+   
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    margin: 10%;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: border-radius 1s;
+    border-color:violet;
+    border-style: solid;
+
+}
+nav ol li {
+    list-style: none;
+    flex-basis: 100%;
+    margin-top: 20%;
+
+}
+
+nav a:hover {
+    background-color:violet;
+    border-radius: 30px;
+}
+
+svg {
+    margin-top: 20px;
+    animation: vinilo 2s infinite alternate;
+}
+
+@keyframes vinilo{
+    from{
+        transform: scale(0.5);
+    } 
+    to {
+        transform: scale(1.5);
+    }
+}
+
+main{
+    flex-basis: 61%;
+    display:flex;
+   
+}
+aside{
+    flex-basis: 18%;
+    display:flex;
+    color: white;
+}
+
+#logoDcha {
+    flex: 1;
+    width:175px; 
+    height:175px;
+}
+
+#logoIzda {
+    flex: 1;
+    width:175px; 
+    height:175px;
+}
+#audioPrincipal {
+    align-items: center;
+    width: 199px;
+    margin: 10px;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    *border: 1px solid red;
+    background-image: url(../img/fernanda.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+
+.elementos {
+    margin: 5px;
+    border: 2px solid violet;
+}
+img{
+    width: 175px;
+    height: 175px;
+    display:block;
+    margin:auto;
+}
+#cuerpo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer {
+    color:white;
+    text-align: center;
+    background-color: black;
+    padding: 15px;
+    margin: 0;
+    display: flex;
+    border: 2px solid violet;
+
+}
+
+footer h2 {
+    text-align: left;
+    flex-basis: 45%;
+    font-size: 30px;
+
+} 
+footer div a img{
+    height: 60px;
+    width: 60px;
+  
+    
+}  
+a .git{
+    filter:invert(200%);
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+    
+} 
+footer div a{
+    flex-basis: 20%;
+}
+
+article {
+    width: 40%;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: 10px;
+    text-align: justify;
+    border: 2px solid violet;
+
+}
+
+article h3 {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: arial;
+    text-align: center;
+    text-transform: uppercase;
+    color:transparent;
+    background: linear-gradient(45deg,yellow,orangered);
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+}
+
+article h4 {
+    font-weight: bold;
+    text-indent: 20px;
+} 
+
+article p{
+    text-align: justify;
+    margin: 2px;
+    padding: 8px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.555);
+    border: 2px solid violet;
+
+}
+#formulario{
+    background-color: black;
+    flex-grow: 1;
+    border: 2px solid violet;
+    flex-direction: row;
+    color: white;
+    
+
+}
+article form section div{
+    flex-basis: 45%;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+label {
+    flex-basis: 100%;
+    margin: 5px;
+}
+article form section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+form  {
+    text-align: center;
+
+}
+#festival{
+    border: 1px solid violet;
+}
+.boton {
+    margin:5px;
+    padding: 5px;
+}
+
+aside section h2 {
+    text-align: center;
+    margin: 10px;
+}
+aside section p {
+    text-align: justify;
+    margin: 10px;
+    font-size: 15px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.555);
+    color:white;
+}
+aside section a{
+    color:white;
+
+}
+input::placeholder {
+color:rgba(88, 79, 79, 0.664);
+font-style: italic;
+}
+
+input:required{
+    border: 3px solid violet;
+    *box-shadow:rgba(238, 130, 238, 0.603);
+}
+input:invalid{
+    border-color: red;
+    box-shadow: 0px 0px 25px red;
+
+
+}
+input:focus{
+    background-color: ivory;
+}
+
+aside section div {
+    margin: 100px auto;
+    text-align: center;
+
+}
+iframe{
+    height: 350px;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
